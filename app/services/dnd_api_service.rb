@@ -24,5 +24,5 @@ class DndApiService
     end
   end
 
-  # You can add other API methods with similar error handling
+  # Add more API calls for things like spells, items, etc.
 end

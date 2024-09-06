@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   post "/characters" => "characters#create"
   patch "/characters/:id" => "characters#index"
   delete "/characters/:id" => "characters#destroy"
+  resources :dnd, only: [:index, :show]
+  get "/api/classes", to: "dnd#classes"
+  get "/api/races", to: "dnd#races"
 end

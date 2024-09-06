@@ -1,12 +1,12 @@
 class CharactersController < ApplicationController
   def index
-    @characters = character.all
+    @characters = Character.all
     render :index
   end
 end
 
 def create
-  @character = character.create(
+  @character = Character.create(
     name: params[:name],
   )
   render :show
