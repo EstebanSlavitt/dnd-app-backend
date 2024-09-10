@@ -62,6 +62,12 @@ group :development do
   gem "http"
 
   gem "bcrypt", "~> 3.1.7"
+
+  gem "jwt"
+
+  gem "http"
+
+  gem "bcrypt", "~> 3.1.7"
 end
 gem "rack-cors"
 
@@ -70,7 +76,3 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-
-gem "http"
-
-gem "bcrypt", "~> 3.1.7"

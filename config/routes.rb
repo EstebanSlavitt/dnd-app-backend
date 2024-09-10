@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/characters/:id" => "characters#show"
   post "/characters" => "characters#create"
   post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
   patch "/characters/:id" => "characters#update"
   delete "/characters/:id" => "characters#destroy"
   resources :dnd, only: [:index, :show]
